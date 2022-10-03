@@ -104,8 +104,8 @@ if __name__ == '__main__':
 
 ## Conclusion
 
-Conclusion summary paragraph. Include common misconceptions and what students
-will be able to do moving forward.
+Flask-WTF can help us create and validate form data before pushing it to the backend for processing. Validating data can prevent
+data type errors and help us create a more robust and error free program.
 
 ***
 
