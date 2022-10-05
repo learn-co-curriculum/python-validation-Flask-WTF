@@ -1,20 +1,18 @@
-from wsgiref.validate import validator
 from flask import Flask, render_template
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import InputRequired
 
 app = Flask(__name__)
 
-# For CRSF token
-app.config['SECRET_KEY'] = 'secret-key'
+# For CSRF token
+app.config['SECRET_KEY'] = 'dfewfew123213rwdsgert34tgfd1234trgf'
 
 # Create a Form Class
 class NameForm(FlaskForm):
-    name = StringField('What is your name', validators=[DataRequired()])
-    # Length input validator
+    name = StringField('What is your name', validators=[InputRequired()])
     submit = SubmitField('Submit')
-# custom validator
+
 
 @app.route('/', methods=['GET','POST'])
 def index():
@@ -29,4 +27,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5555)
