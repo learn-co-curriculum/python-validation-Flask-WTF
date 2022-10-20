@@ -126,7 +126,7 @@ Here is an example of how we can use form.erros.
 ## Conclusion
 
 Flask-WTF can help us create and validate form data before pushing it to the backend for processing. Validating data can prevent
-data type errors and help us create a more robust and error free program.
+data type errors and help us create a more robust and error free program. Don't forget to run the code to try it out: `python app/main.py` from the root of this lesson.
 
 ***
 
